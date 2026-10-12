@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VA151-ACF Charlottesville Virginia | Coming Soon</title>
+<meta name="description" content="VA151-ACF Charlottesville Virginia, a chapter of the American Culinary Federation. New chapter website coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#1C1B19;
+    --bone:#F2ECDD;
+    --bone-dim:#E8E0CB;
+    --brass:#A8752E;
+    --brass-light:#C79448;
+  }
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    background:var(--charcoal);
+    background-image:repeating-linear-gradient(135deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 6px);
+    color:var(--bone);
+    font-family:'Source Serif 4', serif;
+    display:flex;flex-direction:column;
+    overflow-x:hidden;
+  }
+  .top-bar{height:4px;background:var(--brass);}
+  main{
+    flex:1;display:flex;align-items:center;
+    padding:60px 24px;position:relative;
+  }
+  main::after{
+    content:"";position:absolute;right:-15%;top:-10%;
+    width:640px;height:640px;border-radius:50%;
+    background:radial-gradient(circle, rgba(168,117,46,0.16) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .inner{max-width:1000px;margin:0 auto;width:100%;position:relative;z-index:1;}
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;letter-spacing:0.3em;color:var(--brass-light);
+    text-transform:uppercase;display:block;margin-bottom:22px;
+  }
+  h1{
+    font-family:'Oswald', sans-serif;font-weight:700;
+    text-transform:uppercase;letter-spacing:0.02em;
+    font-size:clamp(44px, 9vw, 104px);line-height:0.98;margin:0;
+  }
+  h1 span{color:var(--brass-light);}
+  .lede{
+    font-size:clamp(17px, 2.2vw, 20px);color:var(--bone-dim);
+    max-width:560px;margin:28px 0 0;line-height:1.55;
+  }
+  .ticket{
+    margin-top:44px;display:inline-block;
+    border:1.5px dashed var(--brass);padding:16px 22px;
+    font-family:'JetBrains Mono', monospace;font-size:13px;
+    letter-spacing:0.1em;color:var(--bone-dim);text-transform:uppercase;
+  }
+  .ticket b{color:var(--brass-light);font-weight:500;}
+  footer{
+    border-top:1px solid rgba(242,236,221,0.12);
+    padding:22px 24px;text-align:center;
+    font-family:'JetBrains Mono', monospace;font-size:11px;
+    letter-spacing:0.12em;color:#8a8378;text-transform:uppercase;
+  }
+  footer a{color:var(--brass-light);text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+  <div class="top-bar"></div>
+  <main>
+    <div class="inner">
+      <span class="eyebrow">VA151 - ACF Charlottesville, Virginia</span>
+      <h1>Something's <span>on the stove.</span></h1>
+      <p class="lede">The new home of our American Culinary Federation chapter is in the works &mdash; chapter news, officers, membership, and events for culinary professionals across Central Virginia.</p>
+      <div class="ticket"><b>Order fired</b> &middot; Website coming soon</div>
+    </div>
+  </main>
+  <footer>
+    A chapter of the <a href="https://www.acfchefs.org" target="_blank" rel="noopener">American Culinary Federation</a> &middot; Est. 2026
+  </footer>
+</body>
+</html>
